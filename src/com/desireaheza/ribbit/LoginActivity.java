@@ -16,7 +16,7 @@ public class LoginActivity extends Activity {
 
 	protected TextView signUpLink;
 	EditText userName;
-	EditText pasword;
+	EditText pasword;//userName 
 	Button  loginButton;
 	
 	@Override
