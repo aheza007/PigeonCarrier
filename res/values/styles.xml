@@ -1,14 +1,105 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Pigeon" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_pigeon</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Pigeon</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Pigeon</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Pigeon</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Pigeon</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Pigeon</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_pigeon</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_pigeon</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Pigeon</item>
+        <item name="android:listViewStyle">@style/Theme.Pigeon.lightBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Pigeon.lightBackground.GridView</item>
+        
+        
+        
+    </style>
+    <style name="Theme.Pigeon.lightBackground">
+        <item name="android:background">@color/light_background_color</item>
+    </style>
+    <style name="Theme.Pigeon.lightBackground.GridView">
+        <item name="android:padding">@dimen/space_between_user_grid</item>
+        
+    </style>
+	
+    <style name="ActionBar.Solid.Pigeon" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_pigeon</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_pigeon</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_pigeon</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Pigeon</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Pigeon.TitleTextStyle</item>
+    </style>
+	<style name="ActionBar.Solid.Pigeon.TitleTextStyle" 
+	    parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+	    <item name="android:textColor">@color/background_color</item>
+	</style>
+    <style name="ActionBar.Transparent.Pigeon" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_pigeon</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Pigeon</item>
+    </style>
+
+    <style name="PopupMenu.Pigeon" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_pigeon</item>	
+    </style>
+
+    <style name="DropDownListView.Pigeon" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_pigeon</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Pigeon" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_pigeon</item>
+    </style>
+
+    <style name="DropDownNav.Pigeon" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_pigeon</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_pigeon</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_pigeon</item>
+    </style>
+    
+    <style name="ProgressBar.Pigeon" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_pigeon</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Pigeon" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_pigeon</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Pigeon.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Pigeon</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Pigeon</item>
+    </style>
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -17,4 +108,77 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="AuthBackground">
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+    <style name="ProgressBarAppTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/apptheme_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="BackgroundStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:src">@drawable/backgroud_image</item>
+        <item name="android:scaleType">fitStart</item>
+    </style>
+
+ 
+    <style name="AppNameStyle" parent="android:Widget.Holo.Light.TextView" >
+        <item name="android:layout_marginTop">114dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">wrap_content</item>        <item name="android:layout_height">wrap_content</item>        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+
+    <style name="SubTitleStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/appname</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/subtitle_message</item>
+        <item name="android:textColor">#FF00FF</item>
+        <item name="android:textStyle">bold|italic|normal</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="CredFieldStyle">
+        <item name="android:background">#F7FFFF</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+    <style name="ButtonStyle" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignRight">@id/editTextLayout</item>
+        <item name="android:layout_below">@+id/editTextLayout</item>
+        
+    </style>
+    <style name="CredEditTextStyle" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:ems">10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GridImageStyle">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
 </resources>

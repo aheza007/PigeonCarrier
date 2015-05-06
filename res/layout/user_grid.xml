@@ -1,0 +1,30 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.desireaheza.pigeon.MainActivity$PlaceholderFragment" >
+    
+    <TextView 
+     android:id="@android:id/empty"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"  
+     android:text="@string/empty_friends_fragment" 
+     />
+
+    <GridView
+        android:id="@+id/FriendsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="auto_fit"
+        android:clipToPadding="false"
+        android:horizontalSpacing="@dimen/space_between_user_grid" 
+        android:verticalSpacing="@dimen/space_between_user_grid"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+</RelativeLayout>

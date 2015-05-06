@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="background_color">#F5AB1C</color>
+    <color name="apptheme_color">#f5ab1c</color>
+    <color name="button_pressed">#666569</color>
+    <color name="button_focused">#f5ab1c</color>
+    <color name="button_default">#FF00FF</color>
+	<color name="light_background_color">#e5d3e5</color>
+	<color name="reflesh_color1">#89b2e1</color>
+	<color name="reflesh_color2">#aeec26</color>
+	<color name="reflesh_color3">#3726ec</color>
+	<color name="reflesh_color4">#f5ab1c</color>
+</resources>

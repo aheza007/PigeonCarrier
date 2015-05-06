@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.desireaheza.pigeon.SignUpActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        style="@style/BackgroundStyle"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/background_image" />
+
+    <TextView
+        android:id="@+id/appname"
+        style="@style/AppNameStyle"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        style="@style/SubTitleStyle" />
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/CredFieldStyle"
+        android:layout_below="@id/subTitle"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/userNameId"
+            style="@style/CredEditTextStyle"
+            android:hint="@string/username_hint" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordId"
+            style="@style/CredEditTextStyle"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailFieldId"
+            style="@style/CredEditTextStyle"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:background="#b2d6aa"
+        android:padding="10dp" 
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/signUpButton"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="0.9"
+            android:layour_alignLeft="@+id/buttonLayout"
+            android:text="@string/signUp_button" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/ButtonStyle"
+            android:layour_alignRight="@+id/buttonLayout"
+            android:layout_weight="1"
+            android:text="cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>
